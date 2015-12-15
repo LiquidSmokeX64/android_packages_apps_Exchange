@@ -44,6 +44,9 @@ LOCAL_SDK_VERSION := 19
 
 LOCAL_EMMA_COVERAGE_FILTER += +com.android.exchange.*
 
+# Enable dexpreopt to speed boot time
+WITH_DEXPREOPT := true
+
 include $(BUILD_PACKAGE)
 
 # additionally, build unit tests in a separate .apk
